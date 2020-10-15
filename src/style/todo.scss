@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+$main-font-family: 'Open Sans', sans-serif;
+$display-font-family: 'Fredericka the Great', cursive;
+$light-color: lightgoldenrodyellow;
+$dark-color: #20b2aa;
+
+
+body {
+    background-color: $light-color;
+    font-family: $main-font-family;
+    header {
+        background-color: $dark-color;
+        color: $light-color;
+        padding: 10%;
+        margin-top: 0;
+        h1 {
+            font-family: $display-font-family;
+        }
+    }
+    main {
+        color: $dark-color;
+        padding: 5% 10%;
+        form {
+            border: 1px solid $dark-color;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 30px;
+            h2 {
+                margin-top: 0;
+                font-family: $display-font-family;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 7px;
+                &#addBtn {
+                    width: 50px;
+                    color: $light-color;
+                    background-color: $dark-color;
+                    border: 0;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    &:hover{
+                        background-color: rgba(32, 178, 171, 0.685)}
+                }
+            }
+        }
+        section{
+            ul#list {
+                list-style: inside;
+                padding-left: 0;
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding: 10px 10px 10px 10px ;
+                    border: 1px solid $dark-color;
+                    border-radius: 15px;
+                    margin: 0 0 5px 0;
+                    cursor: pointer;
+                    list-style-type: none;
+                    list-style-position: inside;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    button {
+                        background-color: transparent;
+                        border: 0;
+                        font-size: 25px;
+                        &:hover {
+                            color: rgb(190, 116, 116);
+                        }
+                    }
+                    div i{
+                        margin-right: 10px;
+                        font-size: 25px;
+                    }
+                    div.content {
+                        width: 100%;
+                        h3 {
+                            margin: 0;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                    &.pending {
+                        order: 1;
+                        button {
+                            display: none;
+                        }
+                        &:hover{
+                            background-color: rgba(32, 178, 171, 0.158);
+                        }
+                    }
+                    &.done {
+                        order: 2;
+                        text-decoration: line-through;
+                        &:hover{
+                            background-color: rgba(32, 178, 171, 0.158);
+                        }
+                    }
+                }
+            }
+            h2 {
+                font-family: $display-font-family;
+                margin-top: 100px;
+            }
+        }
+    }
+    footer {
+        background-color: $dark-color;
+        color: $light-color;
+        margin-bottom: 0;
+        width: 100%;
+        padding: 5% 10%;
+    }
+}
+
