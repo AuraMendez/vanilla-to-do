@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:saltams/summer20-test-todo.git"
+    "url": "https://github.com/AuraMendez/vanilla-to-do"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/saltams/summer20-test-todo",
+  "homepage": "https://github.com/AuraMendez/vanilla-to-do",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-salt": "^1.0.1",
