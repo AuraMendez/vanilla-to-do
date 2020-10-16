@@ -1,11 +1,11 @@
 /* Todo app javascript */
+import "../style/todo.scss"
 
 /* NOTE TO INSTRUCTORS:
 I struggled a bit to decide in which way to solve this exercise. I don't
 clearly understand what was meant with "Keep state in a object and NOT in the DOM"
 So I made two versions... On 'todo-other.js' you'll find a solution that erases and
-re-render
-s the whole list of tasks everytime an action happens (a button is pushed).
+re-renders the whole list of tasks everytime an action happens (a button is pushed).
 I later thought that'd probably make it slow if there are many elements on the list
 so I made another version (the current one) that updates both the object and the DOM
 individually for each task. No idea which one is better practice.
